@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="image/tabicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Za Warudo</title>
+	
+	<style>
+	body{
+			background: #4a4101;
+			background: url("image/Pattern.jpg");
+			background-size: 1000px 1000px;
+			}
+	
+	.yellow{
+			background-color: #9f8b03;
+			}
+	
+	.btn-warning{	
+			color: black;
+			background-color: #f4d504;
+			padding-left: 20px;
+			padding-right: 20px;
+			}
+	
+	.modal-content{
+			background-color: #dcc004;
+			}
+		
+	.font{
+			color: #f4d504;
+			}
+
+	div#line1 span#a {
+			display:inline;
+			}
+	div#line1:hover span#a {
+			display:none;
+			}
+	div#line1 span#b {
+			display:none;
+			}
+	div#line1:hover span#b {
+			display:inline;
+			}
+			
+	</style>
+	
+	<script>
+	function validateForm() {
+			var email = document.forms["form1"]["emailAddress"].value;
+			var pass = document.forms["form1"]["password"].value;
+			
+			if (email == ""){
+
+				alert("Please enter your username to log in.");
+				return false;
+			}
+			
+			if (pass == ""){
+
+				alert("Please enter your password to log in.");
+				return false;
+			}
+			
+			if (email != "" || pass != ""){
+				if (email != "charlestacda25"){
+				
+				alert("The username you entered is not assigned to a registered user.");
+				return false;
+				}
+				
+				if (pass != "cj@1125"){
+				
+				alert("The password you entered is incorrect. Please try again.");
+				return false;
+				}
+			
+			}
+		
+	}
+	
+	
+	
+	function showTime(){
+		var date = new Date();
+		var h = date.getHours(); // 0 - 23
+		var m = date.getMinutes(); // 0 - 59
+		var s = date.getSeconds(); // 0 - 59
+		var session = "AM";
+		
+		if(h == 0){
+			h = 12;
+		}
+		
+		if(h > 12){
+			h = h - 12;
+			session = "PM";
+		}
+		
+		h = (h < 10) ? "0" + h : h;
+		m = (m < 10) ? "0" + m : m;
+		s = (s < 10) ? "0" + s : s;
+		
+		var time = h + ":" + m + ":" + s + " " + session;
+		document.getElementById("MyClockDisplay").innerText = time;
+		document.getElementById("MyClockDisplay").textContent = time;
+		
+		setTimeout(showTime, 1000);
+    
+	}
+	
+	
+	</script>
+  </head>
+  <body onload="showTime()">
+	<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark yellow">
+	  <div class="container-fluid" style="margin-left: 10px; margin-right: 10px;">
+		<a class="navbar-brand" href="profile.html">
+			<img src="image/Logo.png" alt="Logo" width="230" height="50">
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  <div class="navbar-nav">
+			<a class="nav-link active" aria-current="page" href="profile.html">HOME</a>
+			<a class="nav-link" href="#" tabindex="-1">TIMESHEET</a>
+			<a class="nav-link" href="#" tabindex="-1">CALENDAR</a>
+		  </div>
+		</div>
+		<a class="nav-link" href="#" tabindex="-1" style="margin-bottom: -4px; color: white !important;"><img src="image/profile.png" height="30px" style="margin-right: 5px; margin-bottom: 4px;">CHARLES TACDA</a>
+		<a style="color: white !important;"class="nav-link" href="index.html" tabindex="-1" style="padding-left: -20px;">LOG OFF</a>
+	  </div>
+	</nav>
+	
+
+
+	
+	<script>
+			function myReset() {
+			  document.getElementById("form1").reset();
+			}
+	</script>
+	
+	<!-- Content -->
+	<br><br><br><br><br><br><br><br><br><br>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="line1">
+						<span id="a">
+							<div class="text-center">
+								<h1 id="ZaWarudo" class="font" style="font-size: 260px;">HELLO TACDA!</h1>
+							</div>
+						</span>
+						<span id="b">
+							<div class="text-center">
+								<h1 id="MyClockDisplay" class="clock font" style="font-size: 260px;" onload="showTime()"></h1>
+							</div>
+						</span>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+
+
+
+	<!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  </body>
+</html>
