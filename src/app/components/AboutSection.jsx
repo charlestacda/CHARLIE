@@ -61,7 +61,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Greetings! I'm a dedicated full stack web developer with a passion for building interactive and responsive web and mobile applications. My skill set includes Java, C#, React, Flutter, MySQL, HTML, and Firebase. As a quick learner, I'm always on the lookout to expand my knowledge and capabilities. I thrive in collaborative environments and am excited to work with others in creating remarkable applications. Welcome to my journey of innovation and continuous learning!
+            Greetings! I&apos;m a dedicated full stack web developer with a passion for building interactive and responsive web and mobile applications. My skill set includes Java, C#, React, Flutter, MySQL, HTML, and Firebase. As a quick learner, I&apos;m always on the lookout to expand my knowledge and capabilities. I thrive in collaborative environments and am excited to work with others in creating remarkable applications. Welcome to my journey of innovation and continuous learning!
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

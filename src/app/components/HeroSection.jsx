@@ -12,7 +12,7 @@ const HeroSection = () => {
                 <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-                            Hello, I'm{" "}
+                            Hello, I&apos;m{" "}
                         </span>
                         <br></br>
                         <TypeAnimation
@@ -33,7 +33,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lf:text-xl" >
-                        Greetings! I'm Charles Joshua Tacda, a 22-year-old college student from the Philippines with four years of experience in developing applications and websites. Currently, I am actively seeking opportunities to elevate my skills and contribute in a professional environment.
+                        Greetings! I&apos;m Charles Joshua Tacda, a 22-year-old college student from the Philippines with four years of experience in developing applications and websites. Currently, I am actively seeking opportunities to elevate my skills and contribute in a professional environment.
                     </p>
                     <div>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white'>
