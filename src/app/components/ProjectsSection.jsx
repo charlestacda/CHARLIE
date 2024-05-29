@@ -62,7 +62,7 @@ const projectsData = [
   {
     id: 7,
     title: "LAYAG Mobile Application",
-    description: "An assistan mobile application for LPU - Cavite.",
+    description: "An assistant mobile application for LPU - Cavite.",
     image: "/images/projects/7.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/charlestacda/LAYAG-Mobile-App",
