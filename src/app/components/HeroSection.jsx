@@ -40,7 +40,7 @@ const HeroSection = () => {
                         <Link href="https://www.linkedin.com/in/charles-tacda-ab75a5271/" target="_blank">Hire Me</Link>
                         </button>
                         <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3'>
-                            <a href="/RESUME_TACDA_LPUC.pdf" download="RESUME_TACDA_LPUC" className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download Resume</a>
+                            <a href="/RESUME_TACDA.pdf" download="RESUME_TACDA_LPUC" className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download Resume</a>
                         </button>
                     </div>
                 </div>
